@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'open sans',  sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url(https://wallpapercosmos.com/w/full/4/8/5/241709-1920x1080-desktop-full-hd-tottenham-hotspur-fc-background-image.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-shadow: 0px 1px 5px rgb(0, 0, 0);
+}
+
+li a:hover{
+    color: blue;
+}
+
+header{
+    position: relative;
+    padding: 0px 2rem;
+    padding-top: 1rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.toggle_bnt{
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+    text-shadow: 0px 1px 5px rgb(0, 0, 0);
+}
+
+.action_bnt{
+    text-shadow: none;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 20px;
+    color: #0F1322;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: scale 0.2s ease;
+}
+
+.action_bnt:hover{
+    scale: 1.05;
+    color: #0F1322;
+}
+
+.action_bnt:active{
+    scale: 0.95;
+}
+
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    width: 200px;
+    height: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    display: none;
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.dropdown_menu.open{
+    transition-duration: 1s;
+    height: 135px;
+}
+
+.dropdown_menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+.dropdown_menu .action_bnt{
+    width: 100%;
+    text-align: center;
+}
+
+@media(max-width: 992px){
+    .navbar .links, .navbar .action_bnt{
+        display: none;
+    }
+
+    .toggle_bnt{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+
+    .dropdown_menu .action_bnt{
+        width: 95%;
+    }
+}
