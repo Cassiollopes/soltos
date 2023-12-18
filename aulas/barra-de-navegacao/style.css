@@ -6,6 +6,7 @@
 }
 
 body{
+    position: absolute;
     height: 100vh;
     background-color: black;
     background-image: url(https://wallpapercosmos.com/w/full/4/8/5/241709-1920x1080-desktop-full-hd-tottenham-hotspur-fc-background-image.jpg);
