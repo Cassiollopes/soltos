@@ -8,9 +8,9 @@
 body{
     height: 100vh;
     background-color: black;
-    background-image: url(https://wallpapercosmos.com/w/full/4/8/5/241709-1920x1080-desktop-full-hd-tottenham-hotspur-fc-background-image.jpg);
+    background-image: url(https://sportinsider.com.br/wp-content/uploads/2022/03/tothotspur.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 li{
@@ -21,7 +21,6 @@ a{
     text-decoration: none;
     color: white;
     font-size: 1rem;
-    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.345);
 }
 
 li a:hover{
@@ -29,6 +28,9 @@ li a:hover{
 }
 
 header{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.503);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.163);
     position: relative;
     padding: 0px 2rem;
 }
@@ -60,7 +62,6 @@ header{
     color: white;
     cursor: pointer;
     display: none;
-    text-shadow: 0px 1px 5px rgb(0, 0, 0);
 }
 
 .action_bnt{
@@ -90,8 +91,9 @@ header{
     width: 200px;
     height: 0;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
-    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.422);
+    background-color: rgba(255, 255, 255, 0.751);
+    backdrop-filter: white blur(2px);
     overflow: hidden;
     display: none;
     transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -106,16 +108,27 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.7rem;
 }
 
-.dropdown_menu li a:hover{
-    text-shadow: none;
+.dropdown_menu .linkes li a{
+    color: black;
+    width: 100%;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+.dropdown_menu .linkes li a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.515);
+    transition: 0.5s;
 }
 
 .dropdown_menu .action_bnt{
     width: 100%;
     text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0.7rem;
 }
 
 @media(max-width: 992px){
