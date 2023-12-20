@@ -92,7 +92,7 @@ header{
     width: 200px;
     height: 0;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.207);
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.273);
     background-color: rgba(255, 255, 255, 0.751);
     backdrop-filter: blur(2px);
     overflow: hidden;
