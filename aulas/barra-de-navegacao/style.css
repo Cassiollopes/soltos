@@ -120,7 +120,7 @@ header{
 }
 
 .dropdown_menu .linkes li a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.2);
     transition: 0.5s;
 }
@@ -128,7 +128,6 @@ header{
 .dropdown_menu .action_bnt{
     width: 100%;
     text-align: center;
-
     margin: 0.7rem;
 }
 
